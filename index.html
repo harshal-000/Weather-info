@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherForecast</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="logo">
+            <img src="pngwing.com.png" alt="logo">
+        </div>
+        <div class="info-container ">
+            <div class="inpt ">
+                <input type="text" id="place" placeholder="city">
+                <button type="button" id="search">Search</button>
+            </div>
+
+            <div class="forecast-container hide">
+                <div class="forcast-img-cont">
+                    <img src="" alt="" id="forecastimg">
+                </div>
+                <div class="temp">
+                    <p id="tempdata"></p>
+                </div>
+                <div class="type">
+                    <p id="climate"></p>
+                    <p id="discription"></p>
+                </div>
+                <div class="place-name">
+                    <p id="placedata"></p>
+                </div>
+                <div class="wind-info">
+                    <div class="humid">
+                        <img src="" id="humidimage">
+                        <p id="humiddata"></p>
+                    </div>
+                    <div class="speed">
+                        <img src="" id="speedimage"></img>
+                        <p id="speeddata"></p>
+                    </div>
+                </div>
+
+                <div class="time">
+                    <div class="hours">
+                        <p></p>
+                    </div>
+                    :
+                    <div class="minutes">
+                        <p></p>
+                    </div>
+                    :
+                    <div class="seconds">
+                       <p></p>
+                    </div>
+                    <div class="ap">
+                        <p id="amp"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+

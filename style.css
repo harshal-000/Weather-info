@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("soft-gradients-color-background-modern-screen-design-for-mobile-app-web-infographic-brochure-vector.jpg");
+
+}
+.main-container{
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 0 1 rgb(179, 179, 236);
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+.info-container{
+    padding: 2rem;
+}
+.logo{
+    display: absolute;
+    left: 0;
+    top: 0;
+   
+}
+.logo img{
+    height: 3rem;
+    width: 3rem;
+}
+.inpt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+#place{
+    width: 300px;
+    padding: 1rem 10px; 
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+    font-size: 1.2rem;
+}
+#search{
+    width: 25%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ background-blend-mode: soft-light,screen;
+}
+
+/* #search:active .main-container{
+    width: 50vw;
+} */
+.forecast-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+#forecastimg{
+    height: 150px;
+}
+
+.forecast-container *{
+    font-size: 1.3rem;
+}
+.type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    margin: 3px;
+}
+.temp *{ 
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+.wind-info{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.speed,.humid{
+    display: flex;
+    gap: 5px;
+}
+
+#humidimage,#speedimage{
+    height: 20px;
+    width: 20px;
+}
+
+.time{
+    margin: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+@media (max-width: 720px) {
+    .main-container{
+        width: 80vw;
+    }
+    #tempdata{ 
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    #forecastimg{
+        height: 80px;
+    }
+
+    .forecast-container{
+        gap: 0.5rem;
+    }
+
+    .forecast-container *{
+        font-size: 1.1rem;
+    }
+  }
